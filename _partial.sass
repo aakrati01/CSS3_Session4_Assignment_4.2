@@ -1,0 +1,29 @@
+$font-size: 15px,
+
+/* Class container with height and width */
+.container
+	width: 400px,
+	height: 400px,
+
+/* class box 1 with different properties */
+.box1
+	width:150px,
+	
+	padding: 10px,
+	border: 2px solid black,
+	
+	background-color : cyan,
+	font-size: $font-size,
+
+	
+.box2
+	width: 200px,
+	padding: 10px,
+	border: 2px solid red,
+	background-color : yellow,
+	font-size: $font-size,
+
+/* class box 3 extending all the properties of box 1 */
+.box3
+	@extend .box1,
+	font-size : 20px,

@@ -1,0 +1,21 @@
+/* @import is importin partial sass file with some properties */
+
+@import "partial";
+
+/* this is changing border radius of three div box */
+
+@mixin border-radius($radius)
+{
+	border-radius: $radius;
+}
+
+/* @include taking border radius of div boxes as 10 px */
+
+.box1, .box2, {
+	@include border-radius(10px);}
+
+/* in thix on taing cursor to box2 color will change */
+
+	.box2:hover{
+	background-color : grey,		
+	}
